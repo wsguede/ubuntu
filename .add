@@ -16,31 +16,26 @@ sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu xenial-getdeb apps" >> /e
 
 #update and upgrade the system before we install anything.
 sudo apt-get update && sudo apt-get upgrade -y
+
+#add some dope stuff
+#chrome
+#atom
+#node
+#ubuntu-tweak
+#vlc
+# + and friends
+#gimp
+#virtualbox
+#toolbar system resource indicator
+#caffeine
 sudo apt-get install -y \
-  # chrome
   google-chrome-stable \
-  
-  # atom
-  atom \
-  
-  # node
   nodejs npm \
-  
-  # ubuntu-tweak
+  atom \
   ubuntu-tweak \
-  
-  # full vlc + codecs
   vlc vlc-data vlc-plugin-pulse \
   browser-plugin-vlc mplayer2 ubuntu-restricted-extras \
-
-  # Gimp - picture edit
   gimp \
-  
-  # VirtualBox - VM
   virtualbox \
-  
-  # Toolbar indicator for system resources
   indicator-multiload \
-  
-  # caffeine - prevent sleep when watching videos
   caffeine \
