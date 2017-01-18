@@ -9,4 +9,20 @@ gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshel
 # No Guest session
 sudo sh -c 'printf "[Seat:*]\nallow-guest=false\n" >/etc/lightdm/lightdm.conf.d/50-no-guest.conf'
 
-# set up vnc
+# turn off sticky edges
+dconf write /org/compiz/profiles/unity/plugins/unityshell/launcher-capture-mouse false
+
+# dl dot_files from gh
+wget -q https://github.com/wsguede/home_directory/archive/master.zip && \
+  unzip -joq master.zip -d ~/ && \
+  rm master.zip
+cat ~/.profile > ~/.bashrc && \
+  rm ~/.profile
+
+# set up ssh key
+
+# set up gpg key
+
+# dl known atom plugins -- this should be separate file
+
+# set up git -- this should be separate file
