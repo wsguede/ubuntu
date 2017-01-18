@@ -15,7 +15,7 @@
 # backup manager
 # the man is listening
 # Your system crashed, send report? --> nah
-sudo apt-get remove --purge --ignore-missing --auto-remove \
+sudo apt-get remove --purge --ignore-missing --auto-remove -y \
   libreoffice* \
   thunderbird* bogofilter* firefox* pidgin* empathy* gwibber* transmission-* \
   gnome-games-* gnome-sudoku gnomine gbrainy aisleriot libgme0 mahjongg \
