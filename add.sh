@@ -42,4 +42,5 @@ sudo apt-get install -y \
   # Toolbar indicator for system resources
   indicator-multiload \
   
-  
+  # caffeine - prevent sleep when watching videos
+  caffeine \
