@@ -42,6 +42,7 @@ sudo apt-get remove --purge --ignore-missing --auto-remove \
   # Your system crashed, send report? --> nah
   apport* whoopsie
   
+  # TODO remove that stupid amazon link.
   
 # autoremove packages no longer needed
 sudo apt-get autoremove
