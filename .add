@@ -33,6 +33,7 @@ sudo apt-get install -y \
   gimp \
   virtualbox \
   indicator-multiload \
-  caffeine
+  caffeine \
+  xclip
 
 sudo apt-get autoremove -y && sudo apt-get clean

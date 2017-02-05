@@ -45,7 +45,8 @@ Name-Email: wsguede@gmail.com
 Expire-Date: 0" \
  | gpg --batch --gen-key
 
-
+gpg --armor --export KEYNAME
+gpg --export-secret-key -a "Bill Guedel" > private.key
 
 # dl known atom plugins -- this should be separate file
 
