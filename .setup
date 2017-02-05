@@ -3,6 +3,10 @@
 #
 # This is to do some setup stuff
 
+# Time in military
+gsettings set com.canonical.indicator.datetime time-format "'custom'"
+gsettings set com.canonical.indicator.datetime custom-time-format "'%a %d %h  %H:%M'"
+
 # Click to minimize
 gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ launcher-minimize-window true
 
@@ -20,8 +24,28 @@ cat ~/.profile > ~/.bashrc && \
   rm ~/.profile
 
 # set up ssh key
+ssh-keygen \
+  -q \
+  -t rsa \
+  -f ~/.ssh/id_rsa \
+  -b 4096 \
+  -C $(hostname) \
+  -N "" && \
+  eval "$(ssh-agent -s)" && \
+  ssh-add ~/.ssh/id_rsa
 
 # set up gpg key
+echo "Key-Type: RSA
+Key-Length: 4096
+Subkey-Type: RSA
+Subkey-Length: 4096
+Name-Real: Bill Guedel
+Name-Comment: $(hostname)
+Name-Email: wsguede@gmail.com
+Expire-Date: 0" \
+ | gpg --batch --gen-key
+
+
 
 # dl known atom plugins -- this should be separate file
 
