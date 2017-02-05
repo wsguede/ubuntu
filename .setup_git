@@ -1,0 +1,15 @@
+#!/bin/bash
+# @author Bill Guedel <wsguede@gmail.com>
+#
+# This is what should be run on a fresh install
+
+echo "Paste after clicking 'add new ssh key'"
+cat ~/.ssh/id_rsa.pub | xclip -selection c && \
+xdg-open https://github.com/settings/keys && \
+read -n1 -r -p "Press any key to continue..." key
+
+echo "hit paste in the 'gpg key'"
+cat ~/.ssh/gpg.pub | xclip -selection c && \
+xdg-open https://github.com/settings/keys && \
+git config --global commit.gpgsign true && \
+read -n1 -r -p "Press space to continue..." key
