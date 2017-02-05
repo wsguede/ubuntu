@@ -23,7 +23,8 @@ sudo apt-get update && sudo apt-get upgrade -y
 #gimp
 #virtualbox
 #toolbar system resource indicator
-#caffeine
+#caffeine - keep the screen on
+# xclip -- send thing to the clipboard
 sudo apt-get install -y \
   google-chrome-stable \
   nodejs npm \
