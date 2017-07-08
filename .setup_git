@@ -9,11 +9,11 @@ git config --global user.name "Bill Guedel"
 
 echo "Paste after clicking 'add new ssh key'"
 cat ~/.ssh/id_rsa.pub | xclip -selection c && \
-xdg-open https://github.com/settings/keys && \
-read -n1 -r -p "Press any key to continue..." key
+  xdg-open https://github.com/settings/keys && \
+  read -n1 -r -p "Press any key to continue..." key
 
-echo "hit paste in the 'gpg key'"
+echo "Paste in the 'gpg key'"
 cat ~/.ssh/gpg.pub | xclip -selection c && \
-xdg-open https://github.com/settings/keys && \
-git config --global commit.gpgsign true && \
-read -n1 -r -p "Press space to continue..." key
+  xdg-open https://github.com/settings/keys && \
+  git config --global commit.gpgsign true && \
+  read -n1 -r -p "Press any key to continue..." key
