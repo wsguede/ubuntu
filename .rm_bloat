@@ -1,7 +1,7 @@
 #!/bin/bash
 # @author Bill Guedel <wsguede@gmail.com>
 #
-# This is to remove the bloat that comes with ubuntu. 
+# This is to remove the bloat that comes with ubuntu.
 
 #We dont want to update/upgrade yet
 # remove libre office and all its junk
@@ -19,7 +19,7 @@ sudo apt-get remove --purge --ignore-missing --auto-remove -y \
   libreoffice* \
   thunderbird* bogofilter* firefox* pidgin* empathy* gwibber* transmission-* \
   gnome-games-* gnome-sudoku gnomine gbrainy aisleriot libgme0 mahjongg \
-  avahi-daemon \
+#  avahi-daemon \
   tomboy \
   ubuntuone* \
   rhythmbox* \
@@ -27,8 +27,6 @@ sudo apt-get remove --purge --ignore-missing --auto-remove -y \
   deja-dup \
   python-zeitgeist zeitgeist-core activity-log-manager-common \
   apport* whoopsie
-  
-  # TODO remove that stupid amazon link.
-  
+
 # autoremove packages no longer needed
 sudo apt-get autoremove -y && sudo apt-get clean

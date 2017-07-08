@@ -17,15 +17,11 @@ sudo sh -c 'printf "[Seat:*]\nallow-guest=false\n" >/etc/lightdm/lightdm.conf.d/
 dconf write /org/compiz/profiles/unity/plugins/unityshell/launcher-capture-mouse false
 
 
-
-# Commented out due to move to zsh
-# dl dot_files from gh
-#wget -q https://github.com/wsguede/home_directory/archive/master.zip && \
-#  unzip -joq master.zip -d ~/ && \
-#  rm master.zip
-#cat ~/.profile > ~/.bashrc && \
-#  rm ~/.profile && \
-#  . ./.bashrc
+# make zsh default, DL+install ohmyzsh, copy default profile over
+chsh -s $(which zsh)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+cp .zsh ~/.zsh
+rm ~/.profile ~/.bash*
 
 # set up ssh key
 ssh-keygen \

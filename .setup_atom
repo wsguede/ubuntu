@@ -1,0 +1,22 @@
+apm install
+  atom-beautify \
+  autocomplete-modules \
+  busy-signal \
+  highlight-selected \
+  intentions \
+  language-babel \
+  language-groovy \
+  language-swift \
+  linter \
+  linter-eslint \
+  linter-ui-default \
+  minimap \
+  minimap-git-diff \
+  minimap-highlight-selected \
+  nuclide \
+  nuclide-test-runner-jest \
+  redux-devtools \
+  set-syntax \
+  tool-bar
+
+cp atom.config.cson ~/.atom/config.cson

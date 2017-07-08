@@ -25,9 +25,10 @@ sudo apt-get update && sudo apt-get upgrade -y
 #toolbar system resource indicator
 #caffeine - keep the screen on
 # xclip -- send thing to the clipboard
+# zsh -- new shell
 sudo apt-get install -y ubuntu-restricted-extras \
   google-chrome-stable \
-  nodejs npm \
+  nodejs nodejs-legacy npm \
   atom \
   vlc vlc-data \
   browser-plugin-vlc mplayer2 \
@@ -35,6 +36,7 @@ sudo apt-get install -y ubuntu-restricted-extras \
   virtualbox \
   indicator-multiload \
   caffeine \
-  xclip
+  xclip \
+  zsh
 
 sudo apt-get autoremove -y && sudo apt-get clean
