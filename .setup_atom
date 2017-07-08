@@ -19,4 +19,4 @@ apm install
   set-syntax \
   tool-bar
 
-cp atom.config.cson ~/.atom/config.cson
+yes | cp -f atom.config.cson ~/.atom/config.cson
