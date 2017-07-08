@@ -3,6 +3,9 @@
 #
 # This is what should be run on a fresh install
 
+git config --global user.email "wsguede@gmail.com"
+git config --global user.name "Bill Guedel"
+
 echo "Paste after clicking 'add new ssh key'"
 cat ~/.ssh/id_rsa.pub | xclip -selection c && \
 xdg-open https://github.com/settings/keys && \
