@@ -5,7 +5,7 @@
 
 git config --global user.email "wsguede@gmail.com"
 git config --global user.name "Bill Guedel"
-# git config --global user.signingkey "" # gh issue #2
+git config --global user.signingkey "$(gpg -k --with-colons | awk -F'::' '/Bill/{print $4}')"
 
 echo "Paste after clicking 'add new ssh key'"
 cat ~/.ssh/id_rsa.pub | xclip -selection c && \

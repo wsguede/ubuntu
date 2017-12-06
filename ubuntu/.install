@@ -1,0 +1,20 @@
+#!/bin/bash
+# @author Bill Guedel <wsguede@gmail.com>
+#
+# This is to add some wanted stuff!
+
+#update and upgrade the system before we install anything.
+sudo apt-get update
+sudo apt-get upgrade -y
+
+#add some dope stuff
+# node
+# xclip -- send thing to the clipboard
+# http --
+sudo apt-get install -y \
+  nodejs nodejs-legacy npm \
+  xclip \
+  http
+
+sudo apt-get autoremove -y
+sudo apt-get clean

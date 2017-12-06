@@ -7,7 +7,6 @@
 # remove libre office and all its junk
 # remove internet stuffs (mail, web, chat, bloggy, torrents )
 # remove games
-# bonjour services
 # old notes application
 # ubuntu cloud
 # crappy music player
@@ -19,7 +18,6 @@ sudo apt-get remove --purge --ignore-missing --auto-remove -y \
   libreoffice* \
   thunderbird* bogofilter* firefox* pidgin* empathy* gwibber* transmission-* \
   gnome-games-* gnome-sudoku gnomine gbrainy aisleriot libgme0 mahjongg \
-#  avahi-daemon \
   tomboy \
   ubuntuone* \
   rhythmbox* \

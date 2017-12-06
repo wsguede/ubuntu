@@ -1,0 +1,6 @@
+#!/bin/bash
+# @author Bill Guedel <wsguede@gmail.com>
+
+apm install --packages-file package-list.txt
+
+yes | cp -f atom.config.cson ~/.atom/config.cson
