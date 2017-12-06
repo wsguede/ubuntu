@@ -9,5 +9,5 @@ git clone https://github.com/wsguede/ubuntu.git
 
 If you dont have git installed download using wget!
 ```sh
-wget -q https://github.com/wsguede/ubuntu/archive/master.zip && unzip -jq master.zip -d ubuntu && rm master.zip && . ./ubuntu/run.sh && rm -rf ubuntu
+wget -q https://github.com/wsguede/ubuntu/archive/master.zip && unzip -jq master.zip -d ubuntu && rm master.zip && . ./ubuntu/fresh_install.sh && rm -rf ubuntu
 ```

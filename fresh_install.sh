@@ -3,10 +3,18 @@
 #
 # This is what should be run on a fresh install
 
-. ./.rm_bloat
-. ./.add
-. ./.setup
+./ubuntu/.remove
+./ubuntu/.install
+./ubuntu/.install_home
+./ubuntu/.setup
 
+./git/.setup
+
+./atom/.install
+./atom/.setup
+
+./zsh/.install
+./zsh/.setup
 
 echo "Add System Monitor to tray"
 echo "Set up Chrome"
