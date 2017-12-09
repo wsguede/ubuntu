@@ -10,8 +10,8 @@ gsettings set com.canonical.indicator.datetime custom-time-format "'%h %d  %H:%M
 # Click to minimize
 gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ launcher-minimize-window true
 
-# No Guest session
-sudo sh -c 'printf "[Seat:*]\nallow-guest=false\n" >/etc/lightdm/lightdm.conf.d/50-no-guest.conf'
+# # No Guest session
+# sudo sh -c 'printf "[Seat:*]\nallow-guest=false\n" >/etc/lightdm/lightdm.conf.d/50-no-guest.conf'
 
 # turn off sticky edges
 dconf write /org/compiz/profiles/unity/plugins/unityshell/launcher-capture-mouse false
