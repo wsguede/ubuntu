@@ -10,23 +10,20 @@ gsettings set com.canonical.indicator.datetime custom-time-format "'%h %d  %H:%M
 # Click to minimize
 gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ launcher-minimize-window true
 
-# # No Guest session
-# sudo sh -c 'printf "[Seat:*]\nallow-guest=false\n" >/etc/lightdm/lightdm.conf.d/50-no-guest.conf'
-
 # turn off sticky edges
 dconf write /org/compiz/profiles/unity/plugins/unityshell/launcher-capture-mouse false
 
-# # set up ssh key
-# ssh-keygen \
-#   -q \
-#   -t rsa \
-#   -f ~/.ssh/id_rsa \
-#   -b 4096 \
-#   -C $(hostname) \
-#   -N "" && \
-#   eval "$(ssh-agent -s)" && \
-#   ssh-add ~/.ssh/id_rsa
-#
+# set up ssh key
+ssh-keygen \
+  -q \
+  -t rsa \
+  -f ~/.ssh/id_rsa \
+  -b 4096 \
+  -C $(hostname) \
+  -N "" && \
+  eval "$(ssh-agent -s)" && \
+  ssh-add ~/.ssh/id_rsa
+
 # # set up gpg key
 # echo "Key-Type: RSA
 # Key-Length: 4096
