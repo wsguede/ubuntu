@@ -18,7 +18,7 @@ pkill firefox
 sudo apt-get remove --purge --ignore-missing --auto-remove -y \
   libreoffice* \
   thunderbird* bogofilter* firefox* pidgin* empathy* gwibber* transmission-* \
-  gnome-games-* gnome-sudoku gnomine gbrainy aisleriot libgme0 mahjongg \
+  gnome-games-* gnome-sudoku gnomine gbrainy aisleriot libgme0 mahjongg ubuntu-web-launchers\
   tomboy \
   ubuntuone* \
   rhythmbox* \
