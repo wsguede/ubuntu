@@ -9,13 +9,13 @@ ${SCRIPTPATH}/ubuntu/.install
 ${SCRIPTPATH}/ubuntu/.install_home
 ${SCRIPTPATH}/ubuntu/.setup
 
-${SCRIPTPATH}/git/.setup
-
 ${SCRIPTPATH}/atom/.install
 ${SCRIPTPATH}/atom/.setup
 
 ${SCRIPTPATH}/zsh/.install
 ${SCRIPTPATH}/zsh/.setup
+
+${SCRIPTPATH}/git/.setup
 
 echo "Set up Chrome"
 echo "Add google account (online accounts)"
