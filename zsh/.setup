@@ -4,7 +4,7 @@
 SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
 
 # make zsh default, DL+install ohmyzsh, copy default profile over
-sudo chsh -s $(which zsh)
+chsh -s $(which zsh)
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 yes | cp "${SCRIPTPATH}/.zshrc" ~/.zshrc
 rm ~/.profile ~/.bash*
