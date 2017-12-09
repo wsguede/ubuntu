@@ -16,29 +16,29 @@ sudo sh -c 'printf "[Seat:*]\nallow-guest=false\n" >/etc/lightdm/lightdm.conf.d/
 # turn off sticky edges
 dconf write /org/compiz/profiles/unity/plugins/unityshell/launcher-capture-mouse false
 
-# set up ssh key
-ssh-keygen \
-  -q \
-  -t rsa \
-  -f ~/.ssh/id_rsa \
-  -b 4096 \
-  -C $(hostname) \
-  -N "" && \
-  eval "$(ssh-agent -s)" && \
-  ssh-add ~/.ssh/id_rsa
-
-# set up gpg key
-echo "Key-Type: RSA
-Key-Length: 4096
-Subkey-Type: RSA
-Subkey-Length: 4096
-Name-Real: Bill Guedel
-Name-Comment: $(hostname)
-Name-Email: wsguede@gmail.com
-Expire-Date: 0" \
- | gpg --batch --gen-key
-
-gpg --armor --export -a "Bill Guedel" > ~/.ssh/gpg.pub
+# # set up ssh key
+# ssh-keygen \
+#   -q \
+#   -t rsa \
+#   -f ~/.ssh/id_rsa \
+#   -b 4096 \
+#   -C $(hostname) \
+#   -N "" && \
+#   eval "$(ssh-agent -s)" && \
+#   ssh-add ~/.ssh/id_rsa
+#
+# # set up gpg key
+# echo "Key-Type: RSA
+# Key-Length: 4096
+# Subkey-Type: RSA
+# Subkey-Length: 4096
+# Name-Real: Bill Guedel
+# Name-Comment: $(hostname)
+# Name-Email: wsguede@gmail.com
+# Expire-Date: 0" \
+#  | gpg --batch --gen-key
+#
+# gpg --armor --export -a "Bill Guedel" > ~/.ssh/gpg.pub
 
 # add to start up
 ln -s /usr/share/applications/guake.desktop ~/.config/autostart
