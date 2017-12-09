@@ -38,6 +38,6 @@ ssh-keygen \
 # gpg --armor --export -a "Bill Guedel" > ~/.ssh/gpg.pub
 
 # add to start up
-ln -s /usr/share/applications/guake.desktop ~/.config/autostart
-ln -s /usr/share/applications/caffeine-indicator.desktop ~/.config/autostart
-ln -s /usr/share/applications/indicator-multiload.desktop ~/.config/autostart
+ln -s /usr/share/applications/guake.desktop ~/.config/autostart/guake.desktop
+ln -s /usr/share/applications/caffeine-indicator.desktop ~/.config/autostart/caffeine-indicator.desktop
+ln -s /usr/share/applications/indicator-multiload.desktop ~/.config/autostart/indicator-multiload.desktop
