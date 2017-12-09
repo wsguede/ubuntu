@@ -11,7 +11,6 @@ ide-typescript
 intentions
 language-babel
 language-ini
-linter
 linter-eslint
 linter-ui-default
 minimap
