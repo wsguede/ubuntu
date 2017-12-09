@@ -2,6 +2,7 @@
 # @author Bill Guedel <wsguede@gmail.com>
 #
 # This is to remove the bloat that comes with ubuntu.
+pkill firefox
 
 #We dont want to update/upgrade yet
 # remove libre office and all its junk
