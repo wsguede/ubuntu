@@ -13,17 +13,12 @@ sudo apt-get upgrade -y
 
 #add some dope stuff
 #chrome
-#atom
-#node
-#ubuntu-tweak
 #vlc
 # + and friends
 #gimp
 #virtualbox
 #toolbar system resource indicator
 #caffeine - keep the screen on
-# xclip -- send thing to the clipboard
-# zsh -- new shell
 sudo apt-get install -y \
   ubuntu-restricted-extras \
   google-chrome-stable \
@@ -32,7 +27,8 @@ sudo apt-get install -y \
   gimp \
   virtualbox \
   indicator-multiload \
-  caffeine
+  caffeine \
+  guake
 
 sudo apt-get autoremove -y
 sudo apt-get clean
