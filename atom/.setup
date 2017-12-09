@@ -1,6 +1,8 @@
 #!/bin/bash
 # @author Bill Guedel <wsguede@gmail.com>
 
-apm install --packages-file package-list.txt
+SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
 
-yes | cp -f atom.config.cson ~/.atom/config.cson
+apm install --packages-file '${SCRIPTPATH}package-list.txt'
+
+yes | cp -f '${SCRIPTPATH}/config.cson' ~/.atom/config.cson

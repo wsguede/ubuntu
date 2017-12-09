@@ -1,8 +1,10 @@
 #!/bin/bash
 # @author Bill Guedel <wsguede@gmail.com>
 
+SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
+
 # make zsh default, DL+install ohmyzsh, copy default profile over
 chsh -s $(which zsh)
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-yes | cp ./.zshrc ~/.zshrc
+yes | cp '${SCRIPTPATH}/.zshrc' ~/.zshrc
 rm ~/.profile ~/.bash*
