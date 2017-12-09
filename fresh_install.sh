@@ -2,19 +2,20 @@
 # @author Bill Guedel <wsguede@gmail.com>
 #
 # This is what should be run on a fresh install
+SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
 
-./ubuntu/.remove
-./ubuntu/.install
-./ubuntu/.install_home
-./ubuntu/.setup
+${SCRIPTPATH}/ubuntu/.remove
+${SCRIPTPATH}/ubuntu/.install
+${SCRIPTPATH}/ubuntu/.install_home
+${SCRIPTPATH}/ubuntu/.setup
 
-./git/.setup
+${SCRIPTPATH}/git/.setup
 
-./atom/.install
-./atom/.setup
+${SCRIPTPATH}/atom/.install
+${SCRIPTPATH}/atom/.setup
 
-./zsh/.install
-./zsh/.setup
+${SCRIPTPATH}/zsh/.install
+${SCRIPTPATH}/zsh/.setup
 
 echo "Add System Monitor to tray"
 echo "Set up Chrome"
