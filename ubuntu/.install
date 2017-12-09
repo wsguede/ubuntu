@@ -3,6 +3,8 @@
 #
 # This is to add some wanted stuff!
 
+wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sudo -E bash -
+
 #update and upgrade the system before we install anything.
 sudo apt-get update
 sudo apt-get upgrade -y

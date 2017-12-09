@@ -3,6 +3,6 @@
 
 SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
 
-apm install --packages-file "${SCRIPTPATH}package-list.txt"
+apm install --packages-file "${SCRIPTPATH}/package-list.txt"
 
 yes | cp -f "${SCRIPTPATH}/config.cson" ~/.atom/config.cson

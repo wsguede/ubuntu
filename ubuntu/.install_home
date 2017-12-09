@@ -13,8 +13,7 @@ sudo apt-get upgrade -y
 
 #add some dope stuff
 #chrome
-#vlc
-# + and friends
+#vlc + and friends
 #gimp
 #virtualbox
 #toolbar system resource indicator
@@ -22,8 +21,7 @@ sudo apt-get upgrade -y
 sudo apt-get install -y \
   ubuntu-restricted-extras \
   google-chrome-stable \
-  vlc vlc-data \
-  browser-plugin-vlc mplayer2 \
+  vlc vlc-data browser-plugin-vlc \
   gimp \
   virtualbox \
   indicator-multiload \
