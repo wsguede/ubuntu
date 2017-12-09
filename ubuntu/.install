@@ -14,7 +14,7 @@ sudo apt-get upgrade -y
 # xclip -- send thing to the clipboard
 # http --
 sudo apt-get install -y \
-  nodejs nodejs-legacy npm \
+  nodejs npm \
   xclip \
   httpie
 
