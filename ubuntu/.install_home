@@ -26,6 +26,7 @@ sudo apt-get install -y \
   virtualbox \
   indicator-multiload \
   caffeine \
+  vinagre \
   guake
 
 sudo apt-get autoremove -y

@@ -10,6 +10,7 @@ pkill firefox
 # remove games
 # old notes application
 # ubuntu cloud
+# bad vnc viewer
 # crappy music player
 # mobile cell / pan manager
 # backup manager
@@ -21,6 +22,7 @@ sudo apt-get remove --purge --ignore-missing --auto-remove -y \
   gnome-games-* gnome-sudoku gnomine gbrainy aisleriot libgme0 mahjongg ubuntu-web-launchers\
   tomboy \
   ubuntuone* \
+  remmina \
   rhythmbox* \
   modemmanager \
   deja-dup \
