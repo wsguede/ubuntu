@@ -10,15 +10,23 @@ sudo apt-get update
 sudo apt-get upgrade -y
 
 #add some dope stuff
+# python3 and pip
 # git
-# node
 # xclip -- send thing to the clipboard
 # http --
 sudo apt-get install -y \
+  python3 python3-pip \
   git \
-  nodejs npm \
   xclip \
+  curl \
   httpie
+  
+# install node version manager (nvm)
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+nvm install 8.10
+nvm install node
+
+pip install --upgrade --user awscli aws-sam-cli
 
 sudo apt-get autoremove -y
 sudo apt-get clean
