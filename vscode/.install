@@ -1,0 +1,11 @@
+#!/bin/bash
+# @author Bill Guedel <wsguede@gmail.com>
+
+SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
+
+curl -o "${SCRIPTPATH}/vscode.deb" https://go.microsoft.com/fwlink/?LinkID=760868
+
+sudo apt install "${SCRIPTPATH}/vscode.deb"
+
+# Todo get some good plugins
+# Todo copy over settings file
