@@ -34,59 +34,12 @@
     showIndentGuide: true
     showInvisibles: true
     tabType: "soft"
-  "linter-eslint":
-    fixOnSave: true
-  "linter-ui-default":
-    decorateOnTreeView: "None"
-    panelHeight: 105
   minimap:
     plugins:
       "git-diff": true
       "git-diffDecorationsZIndex": 0
       "highlight-selected": true
       "highlight-selectedDecorationsZIndex": 0
-  nuclide:
-    "nuclide-buck":
-      compileErrorDiagnostics: false
-      suggestTaskRunner: false
-    "nuclide-debugger-native": {}
-    "nuclide-diagnostics-ui":
-      showDiagnosticTraces: true
-    "nuclide-diff-view":
-      shouldDockPublishView: false
-    "nuclide-distraction-free-mode":
-      hideFindAndReplace: true
-      hideStatusBar: true
-      hideToolBar: true
-    "nuclide-file-tree":
-      hideIgnoredNames: false
-      revealFileOnSwitch: true
-      showOpenFiles: false
-      showUncommittedChangesKind: "Uncommitted changes"
-    "nuclide-flow":
-      canUseFlowBin: true
-      warnOnNotInstalled: false
-    "nuclide-health":
-      toolbarJewel: "CPU"
-    "nuclide-home":
-      showHome: false
-    "nuclide-notifications":
-      whenFocused: true
-    "nuclide-ocaml":
-      enableDiagnostics: false
-    use:
-      "nuclide-buck": false
-      "nuclide-buck-ios": false
-      "nuclide-context-view": false
-      "nuclide-diff-view": false
-      "nuclide-patch-editor": false
-      "nuclide-python": false
-      "nuclide-related-files": false
-      "nuclide-remote-atom": false
-      "nuclide-remote-projects": false
-      "nuclide-source-control-side-bar": false
-      "nuclide-task-runner": false
-  "tool-bar": {}
   welcome:
     showOnStartup: false
 ".ansi.text":
